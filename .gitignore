@@ -13,6 +13,7 @@ local.properties
 logs/**
 logs/**/*
 *.log
+dependency-reduced-pom.xml
 
 # External tool builders
 .externalToolBuilders/
