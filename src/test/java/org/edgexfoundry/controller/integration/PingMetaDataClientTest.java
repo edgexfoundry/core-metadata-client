@@ -16,12 +16,13 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.junit.Assert.assertEquals;
 
 import java.lang.reflect.Field;
 
+import org.edgexfoundry.controller.PingMetaDataClient;
 import org.edgexfoundry.controller.impl.PingMetaDataClientImpl;
 import org.edgexfoundry.test.category.RequiresCoreDataRunning;
 import org.junit.Before;

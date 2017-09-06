@@ -16,7 +16,7 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.edgexfoundry.test.data.ScheduleEventData.TEST_SCHEDULE_EVENT_NAME;
 import static org.edgexfoundry.test.data.ScheduleEventData.checkTestData;
@@ -32,6 +32,9 @@ import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.ServiceUnavailableException;
 
+import org.edgexfoundry.controller.AddressableClient;
+import org.edgexfoundry.controller.ScheduleClient;
+import org.edgexfoundry.controller.ScheduleEventClient;
 import org.edgexfoundry.controller.impl.AddressableClientImpl;
 import org.edgexfoundry.controller.impl.ScheduleClientImpl;
 import org.edgexfoundry.controller.impl.ScheduleEventClientImpl;

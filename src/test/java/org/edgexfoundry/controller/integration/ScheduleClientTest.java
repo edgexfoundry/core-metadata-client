@@ -16,7 +16,7 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.edgexfoundry.test.data.ScheduleData.TEST_SCHEDULE_NAME;
 import static org.edgexfoundry.test.data.ScheduleData.checkTestData;
@@ -31,6 +31,9 @@ import java.util.List;
 import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.NotFoundException;
 
+import org.edgexfoundry.controller.AddressableClient;
+import org.edgexfoundry.controller.ScheduleClient;
+import org.edgexfoundry.controller.ScheduleEventClient;
 import org.edgexfoundry.controller.impl.AddressableClientImpl;
 import org.edgexfoundry.controller.impl.ScheduleClientImpl;
 import org.edgexfoundry.controller.impl.ScheduleEventClientImpl;
@@ -98,7 +101,7 @@ public class ScheduleClientTest {
     List<ScheduleEvent> events = evtClient.scheduleEvents();
     events.forEach((event) -> evtClient.delete(event.getId()));
     List<Schedule> schedules = client.schedules();
-    schedules.forEach((sch) -> client.delete(addr.getId()));
+    schedules.forEach((sch) -> client.delete(sch.getId()));
     List<Addressable> addressables = addrClient.addressables();
     addressables.forEach((addr) -> addrClient.delete(addr.getId()));
   }

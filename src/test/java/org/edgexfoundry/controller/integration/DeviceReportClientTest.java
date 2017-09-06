@@ -16,7 +16,7 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.edgexfoundry.test.data.ReportData.TEST_RPT_NAME;
 import static org.edgexfoundry.test.data.ReportData.checkTestData;
@@ -32,6 +32,13 @@ import java.util.List;
 import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.NotFoundException;
 
+import org.edgexfoundry.controller.AddressableClient;
+import org.edgexfoundry.controller.DeviceClient;
+import org.edgexfoundry.controller.DeviceProfileClient;
+import org.edgexfoundry.controller.DeviceReportClient;
+import org.edgexfoundry.controller.DeviceServiceClient;
+import org.edgexfoundry.controller.ScheduleClient;
+import org.edgexfoundry.controller.ScheduleEventClient;
 import org.edgexfoundry.controller.impl.AddressableClientImpl;
 import org.edgexfoundry.controller.impl.DeviceClientImpl;
 import org.edgexfoundry.controller.impl.DeviceProfileClientImpl;
