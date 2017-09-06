@@ -16,7 +16,7 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.edgexfoundry.test.data.ProfileData.TEST_LABELS;
 import static org.edgexfoundry.test.data.ProfileData.TEST_MAUFACTURER;
@@ -35,6 +35,8 @@ import java.util.List;
 import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.NotFoundException;
 
+import org.edgexfoundry.controller.CommandClient;
+import org.edgexfoundry.controller.DeviceProfileClient;
 import org.edgexfoundry.controller.impl.CommandClientImpl;
 import org.edgexfoundry.controller.impl.DeviceProfileClientImpl;
 import org.edgexfoundry.domain.meta.Command;

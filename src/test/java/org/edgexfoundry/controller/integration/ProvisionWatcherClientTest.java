@@ -16,7 +16,7 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.edgexfoundry.test.data.ProvisionWatcherData.KEY1;
 import static org.edgexfoundry.test.data.ProvisionWatcherData.NAME;
@@ -31,6 +31,10 @@ import java.util.List;
 
 import javax.ws.rs.NotFoundException;
 
+import org.edgexfoundry.controller.AddressableClient;
+import org.edgexfoundry.controller.DeviceProfileClient;
+import org.edgexfoundry.controller.DeviceServiceClient;
+import org.edgexfoundry.controller.ProvisionWatcherClient;
 import org.edgexfoundry.controller.impl.AddressableClientImpl;
 import org.edgexfoundry.controller.impl.DeviceProfileClientImpl;
 import org.edgexfoundry.controller.impl.DeviceServiceClientImpl;

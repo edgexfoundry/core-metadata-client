@@ -16,7 +16,7 @@
  * @version: 1.0.0
  *******************************************************************************/
 
-package org.edgexfoundry.controller;
+package org.edgexfoundry.controller.integration;
 
 import static org.edgexfoundry.test.data.AddressableData.TEST_ADDRESS;
 import static org.edgexfoundry.test.data.AddressableData.TEST_ADDR_NAME;
@@ -35,6 +35,7 @@ import java.util.List;
 import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.NotFoundException;
 
+import org.edgexfoundry.controller.AddressableClient;
 import org.edgexfoundry.controller.impl.AddressableClientImpl;
 import org.edgexfoundry.domain.meta.Addressable;
 import org.edgexfoundry.test.category.RequiresMetaDataRunning;
