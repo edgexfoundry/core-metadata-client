@@ -206,29 +206,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>${checkstyle.plugin.version}</version>
-				<executions>
-					<execution>
-						<id>validate</id>
-						<phase>validate</phase>
-						<configuration>
-							<configLocation>google_checks.xml</configLocation>
-							<consoleOutput>true</consoleOutput>
-							<violationSeverity>error</violationSeverity>
-							<skip>false</skip>
-							<linkXRef>false</linkXRef>
-							<includeTestSourceDirectory>true</includeTestSourceDirectory>
-							<outputFile>${project.build.directory}/edgex-checkstyles-result.xml</outputFile>
-						</configuration>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
