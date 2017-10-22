@@ -168,7 +168,7 @@ public class ScheduleEventClientTest {
     client.add(event);
   }
 
-  @Test(expected = ServiceUnavailableException.class)
+  @Test(expected = ClientErrorException.class)
   public void testAddWithNoScheduleName() {
     ScheduleEvent event = newTestInstance();
     event.setName("NewName");
