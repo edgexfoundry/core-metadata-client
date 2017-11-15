@@ -22,7 +22,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.edgexfoundry</groupId>
   <artifactId>core-metadata-client</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.5.0-SNAPSHOT</version>
   <name>EdgeX Foundry Core Metadata Client Library</name>
   <description>EdgeX Foundry client library for calling on Core Metadata</description>
     
@@ -31,9 +31,9 @@
 		<spring.cloud.version>Brixton.SR5</spring.cloud.version>
 		<resteasy.version>3.0.13.Final</resteasy.version>
 		<jackson-annotations.version>2.6.7</jackson-annotations.version>
-		<domain.version>0.2.0-SNAPSHOT</domain.version>
-		<exception.version>0.2.0-SNAPSHOT</exception.version>
-		<core-test.version>0.2.0-SNAPSHOT</core-test.version>
+		<domain.version>0.5.0-SNAPSHOT</domain.version>
+		<exception.version>0.5.0-SNAPSHOT</exception.version>
+		<core-test.version>0.5.0-SNAPSHOT</core-test.version>
 		<junit.version>4.12</junit.version>
 		<maven-surfire-plugin.version>2.19.1</maven-surfire-plugin.version>
 		<maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
